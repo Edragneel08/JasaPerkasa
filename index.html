@@ -55,6 +55,17 @@
       object-fit: cover;
       /* Ensures the image covers the entire container without distortion */
     }
+    .logo {
+    max-width: 100px; /* Set a specific maximum width */
+    height: auto; /* Ensure the height adjusts based on the width */
+}
+
+/* Media query for smaller devices like iPhones */
+@media only screen and (max-width: 600px) {
+    .logo {
+        max-width: 80px; /* Adjust the size for smaller screens */
+    }
+}
   </style>
 </head>
 
@@ -67,7 +78,7 @@
         <a href="index.html">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <img src="img/favicon.png" alt="Logo" style="width: 85%; height: 100%;">
+          <img src="img/favicon.png" alt="Logo" class="logo">
         </a>
         <h4 class="sitename">Jasa Perkasa Security</h4>
       </div>
